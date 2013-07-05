@@ -1,10 +1,10 @@
 NLPrise
 =======
 
+Java library for natural language processing. Initially geared to handle Italian.
+
 _to prise : to extract or obtain with difficulty: they had to prise the news out of him._
 
-
-Java library for natural language processing. Initially geared to handle Italian.
 
 
 

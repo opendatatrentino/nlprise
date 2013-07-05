@@ -16,7 +16,7 @@ public class ItalianDateParser extends BaseParser<Object> {
 	}
 
 	Rule DateParser() {
-		return FirstOf(ExtendedDate(), ExtendedDayAndNumber(), BasicSlashDate(), BasicDashDate(),
+		return FirstOf(ExtendedDate(), ExtendedDayAndNumber(), BasicSlashDate(), BasicDashDate(), LongDashDate(),
 				MonthandYearOnly(), MonthDashYear(), CkanDateAndTime());
 	}
 
@@ -52,6 +52,10 @@ public class ItalianDateParser extends BaseParser<Object> {
 	Rule BasicDashDate() {
 		return Sequence(DayOfMonth(), Dash(), MonthInNum(), Dash(), Year());
 	}
+	
+	Rule LongDashDate() {
+		return Sequence(DayOfMonth(), Dash(), OneMonthInWords(), Dash(), Year());
+	}
 
 	// Month and year only monthinwords yy or yyyy
 	Rule MonthandYearOnly() {
@@ -60,7 +64,7 @@ public class ItalianDateParser extends BaseParser<Object> {
 
 	// Monthinwords-yy giugno-99 gu-99
 	Rule MonthDashYear() {
-		return Sequence(OneMonthInWords(), Dash(), Sequence(Digit(), Digit()));
+		return Sequence(OneMonthInWords(), Dash(), Year());
 	}
 
 	// Specific CKAN Date Format "YYYY-MM-DDTHH:MM:SS.MMMMM"
@@ -196,9 +200,9 @@ public class ItalianDateParser extends BaseParser<Object> {
 	 */
 	public enum GiorniSettimana {
 
-		LUNEDI("lunedÃ¬", "lun"), MARTEDI("martedÃ¬", "mar"), MERCOLEDI(
-				"mercoledÃ¬", "mer"), GIOVEDI("giovedÃ¬", "gio"), VENERDI(
-				"venerdÃ¬", "venerdÃ¬"), SABATO("sabato", "sab"), DOMENICA(
+		LUNEDI("lunedì", "lun"), MARTEDI("martedì", "mar"), MERCOLEDI(
+				"mercoledì", "mer"), GIOVEDI("giovedì", "gio"), VENERDI(
+				"venerdì", "venerdì"), SABATO("sabato", "sab"), DOMENICA(
 				"domenica", "dom");
 
 		private String abbr;

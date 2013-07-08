@@ -5,7 +5,7 @@ import java.util.HashMap;
 /**
  * Represent the response from the DateParser.isDate()
  * @author azanella
- * Last modified by azanella On Jul 4, 2013
+ * Last modified by azanella On 08/lug/2013
  */
 public class Response {
 	/**

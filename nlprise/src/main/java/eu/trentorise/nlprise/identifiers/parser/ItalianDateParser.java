@@ -5,8 +5,8 @@ import org.parboiled.Rule;
 
 /**
  * Parboiled parser for some Italian date and time format
- * 
- * @author azanella Last modified by azanella On Jul 3, 2013
+ * @author a.zanella
+ * Last modified by azanella On 08/lug/2013
  */
 public class ItalianDateParser extends BaseParser<Object> {
 

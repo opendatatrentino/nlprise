@@ -12,8 +12,18 @@ import com.mdimension.jchronic.Chronic;
 import eu.trentorise.nlprise.identifiers.date.Response.DateParser;
 import eu.trentorise.nlprise.identifiers.parser.ItalianDateParser;
 
+/**
+ * This class provide methods to identify date fields in various formats
+ * @author a.zanella
+ * Last modified by azanella On 08/lug/2013
+ */
 public class DateIdentifier {
 
+	/**
+	 * This methods provides an easy way to check if a field is a date
+	 * @param toRecognize : string to be recognized
+	 * @return : the result
+	 */
 	@SuppressWarnings("rawtypes")
 	public static Response isADate(String toRecognize) {
 		ItalianDateParser parser = Parboiled

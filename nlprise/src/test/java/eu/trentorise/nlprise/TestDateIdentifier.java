@@ -5,6 +5,11 @@ import java.util.Date;
 import org.junit.Test;
 import eu.trentorise.nlprise.identifiers.date.DateIdentifier;
 import eu.trentorise.nlprise.identifiers.date.Response.DateParser;
+/**
+ * 
+ * @author a.zanella
+ *Last modified by azanella On 08/lug/2013
+ */
 
 public class TestDateIdentifier {
 

@@ -20,6 +20,7 @@ _to prise : to extract or obtain with difficulty: they had to prise the news out
 
 * Java library
 * Additional web interface
+* Maven project
 
 ### Credits
 

@@ -53,11 +53,17 @@ public class DateIdentifier {
 		{
 			srv.put(DateParser.POJAVA, false);
 		}
+		try
+		{
 		if (Chronic.parse(toRecognize) == null) {
 			srv.put(DateParser.JCHRONIC, false);
 		} else {
 			srv.put(DateParser.JCHRONIC, true);
 			retval.setResult(true);
+		}
+		}catch(RuntimeException e)
+		{
+			srv.put(DateParser.JCHRONIC, false);
 		}
 		
 		retval.setSingleParserReturn(srv);

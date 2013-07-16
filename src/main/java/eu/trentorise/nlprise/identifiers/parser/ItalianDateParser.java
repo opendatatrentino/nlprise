@@ -39,8 +39,7 @@ public class ItalianDateParser extends BaseParser<Object> {
 				DayOfMonth(),
 				Ch(' '),
 				OneMonthInWords(),
-				Optional(FirstOf(TestTime(),
-						Sequence(Optional(Ch(',')), Ch(' '), Year()))));
+				FirstOf(TestTime(),Sequence(Optional(Ch(',')), Ch(' '), Year())),EOI);
 	}
 
 	Rule TestTime() {

@@ -4,13 +4,13 @@ import java.util.HashMap;
 
 /**
  * Represent the response from the DateParser.isDate()
- * @author azanella
+ * @author Alberto Zanella <a.zanella@trentorise.eu>
  * Last modified by azanella On 08/lug/2013
  */
 public class Response {
 	/**
 	 * Contains parser used to identify date. INTERNAL is the parser.ItalianDateParser
-	 * @author azanella
+	 * @author Alberto Zanella <a.zanella@trentorise.eu>
 	 *
 	 */
 	public enum DateParser { INTERNAL, JCHRONIC, POJAVA;}

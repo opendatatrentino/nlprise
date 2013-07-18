@@ -8,7 +8,7 @@ import eu.trentorise.opendata.nlprise.identifiers.date.DateIdentifier;
 
 /**
  * 
- * @author a.zanella
+ * @author Alberto Zanella <a.zanella@trentorise.eu>
  *Last modified by azanella On 08/lug/2013
  */
 

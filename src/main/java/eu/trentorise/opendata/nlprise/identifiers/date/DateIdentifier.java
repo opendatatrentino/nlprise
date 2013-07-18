@@ -14,7 +14,7 @@ import eu.trentorise.opendata.nlprise.identifiers.parser.ItalianDateParser;
 
 /**
  * This class provide methods to identify date fields in various formats
- * @author a.zanella
+ * @author Alberto Zanella <a.zanella@trentorise.eu>
  * Last modified by azanella On 08/lug/2013
  */
 public class DateIdentifier {

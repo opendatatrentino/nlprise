@@ -5,7 +5,7 @@ import org.parboiled.Rule;
 
 /**
  * Parboiled parser for some Italian date and time format
- * @author a.zanella
+ * @author Alberto Zanella <a.zanella@trentorise.eu>
  * Last modified by azanella On 08/lug/2013
  */
 public class ItalianDateParser extends BaseParser<Object> {
@@ -165,7 +165,7 @@ public class ItalianDateParser extends BaseParser<Object> {
 	/**
 	 * Enumerates all italian months with conventional abbreviation
 	 * 
-	 * @author azanella Last modified by azanella On Jul 3, 2013
+	 * @author Alberto Zanella <a.zanella@trentorise.eu> Last modified by azanella On Jul 3, 2013
 	 */
 	private enum MesiAnno {
 
@@ -195,7 +195,7 @@ public class ItalianDateParser extends BaseParser<Object> {
 	/**
 	 * Enumerates all italian days of week with conventional abbreviations
 	 * 
-	 * @author azanella Last modified by azanella On Jul 3, 2013
+	 * @author Alberto Zanella <a.zanella@trentorise.eu> Last modified by azanella On Jul 3, 2013
 	 */
 	public enum GiorniSettimana {
 

@@ -1,4 +1,4 @@
-package eu.trentorise.nlprise.identifiers.date;
+package eu.trentorise.opendata.nlprise.identifiers.date;
 
 import java.util.HashMap;
 
@@ -9,8 +9,8 @@ import org.pojava.datetime.DateTime;
 
 import com.mdimension.jchronic.Chronic;
 
-import eu.trentorise.nlprise.identifiers.date.Response.DateParser;
-import eu.trentorise.nlprise.identifiers.parser.ItalianDateParser;
+import eu.trentorise.opendata.nlprise.identifiers.date.Response.DateParser;
+import eu.trentorise.opendata.nlprise.identifiers.parser.ItalianDateParser;
 
 /**
  * This class provide methods to identify date fields in various formats

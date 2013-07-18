@@ -3,8 +3,9 @@ package eu.trentorise.nlprise;
 import static org.junit.Assert.*; 
 import java.util.Date;
 import org.junit.Test;
-import eu.trentorise.nlprise.identifiers.date.DateIdentifier;
-import eu.trentorise.nlprise.identifiers.date.Response.DateParser;
+
+import eu.trentorise.opendata.nlprise.identifiers.date.DateIdentifier;
+
 /**
  * 
  * @author a.zanella

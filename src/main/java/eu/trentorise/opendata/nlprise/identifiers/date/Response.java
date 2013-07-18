@@ -1,4 +1,4 @@
-package eu.trentorise.nlprise.identifiers.date;
+package eu.trentorise.opendata.nlprise.identifiers.date;
 
 import java.util.HashMap;
 

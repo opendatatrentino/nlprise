@@ -1,4 +1,4 @@
-package eu.trentorise.nlprise.identifiers.parser;
+package eu.trentorise.opendata.nlprise.identifiers.parser;
 
 import org.parboiled.BaseParser;
 import org.parboiled.Rule;
@@ -199,9 +199,9 @@ public class ItalianDateParser extends BaseParser<Object> {
 	 */
 	public enum GiorniSettimana {
 
-		LUNEDI("lunedì", "lun"), MARTEDI("martedì", "mar"), MERCOLEDI(
-				"mercoledì", "mer"), GIOVEDI("giovedì", "gio"), VENERDI(
-				"venerdì", "venerdì"), SABATO("sabato", "sab"), DOMENICA(
+		LUNEDI("lunedï¿½", "lun"), MARTEDI("martedï¿½", "mar"), MERCOLEDI(
+				"mercoledï¿½", "mer"), GIOVEDI("giovedï¿½", "gio"), VENERDI(
+				"venerdï¿½", "venerdï¿½"), SABATO("sabato", "sab"), DOMENICA(
 				"domenica", "dom");
 
 		private String abbr;

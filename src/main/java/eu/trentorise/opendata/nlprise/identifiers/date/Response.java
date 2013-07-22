@@ -1,6 +1,7 @@
 package eu.trentorise.opendata.nlprise.identifiers.date;
 
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Represent the response from the DateParser.isDate()
@@ -16,7 +17,7 @@ public class Response {
 	public enum DateParser { INTERNAL, JCHRONIC, POJAVA;}
 		
 	private boolean result;
-	private HashMap<DateParser, Boolean> singleParserReturn;
+	private Map<DateParser, Boolean> singleParserReturn;
 	
 	/**
 	 * 
@@ -29,7 +30,7 @@ public class Response {
 	 * 
 	 * @return an HashMap containing the parser as the key and the result of the evaluation (boolean) as value
 	 */
-	public HashMap<DateParser, Boolean> getSingleParserReturn() {
+	public Map<DateParser, Boolean> getSingleParserReturn() {
 		return singleParserReturn;
 	}
 	protected void setResult(boolean result) {

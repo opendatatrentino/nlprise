@@ -24,6 +24,9 @@ public class DateIdentifier {
 	 * @param toRecognize : string to be recognized
 	 * @return : the result
 	 */
+	
+	
+	
 	@SuppressWarnings("rawtypes")
 	public static Response isADate(String toRecognize) {
 		ItalianDateParser parser = Parboiled
@@ -39,11 +42,8 @@ public class DateIdentifier {
 			srv.put(DateParser.INTERNAL, true);
 			retval.setResult(true);
 		}
-		toRecognize = toRecognize.replaceAll(",", " ");
-		toRecognize = toRecognize.replaceAll(";", " ");
-		toRecognize = toRecognize.replaceAll("  ", " ");
-		
-		
+		toRecognize = toRecognize.replaceAll(",", " ").replaceAll(";", " ").replaceAll("  ", " ");
+
 		try
 		{
 			DateTime.parse(toRecognize);
@@ -68,5 +68,10 @@ public class DateIdentifier {
 		
 		retval.setSingleParserReturn(srv);
 		return retval;
+	}
+
+	private DateIdentifier() {
+		super();
+
 	}
 }

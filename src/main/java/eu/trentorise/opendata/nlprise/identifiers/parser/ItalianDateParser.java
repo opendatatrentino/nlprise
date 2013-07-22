@@ -151,7 +151,6 @@ public class ItalianDateParser extends BaseParser<Object> {
 
 	boolean isLimited(String s, int limit) {
 		if (Integer.parseInt(s) <= limit) {
-			// push(new Integer(s));
 			return true;
 		}
 		return false;

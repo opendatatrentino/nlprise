@@ -51,7 +51,7 @@ public class DateIdentifier {
 		ParsingResult<?> result = new RecoveringParseRunner(
 				parser.DateTimeParser()).run(toRecognize);
 		Response retval = new Response();
-		HashMap<DateParser, Boolean> srv = new HashMap<>();
+		HashMap<DateParser, Boolean> srv = new HashMap<DateParser, Boolean>();
 		if (result.hasErrors()) {
 			srv.put(DateParser.INTERNAL, false);
 

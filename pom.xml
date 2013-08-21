@@ -102,7 +102,6 @@
 				<executions>
 					<execution>
 						<id>attach-sources</id>
-						<phase>install</phase>
 						<goals>
 							<goal>jar</goal>
 						</goals>
@@ -121,9 +120,9 @@
 		</plugins>
 	</build>
 	<scm>
-		<url>git@github.com:opendatatrentino/nlprise.git</url>
-		<connection>scm:git:git@github.com:opendatatrentino/nlprise.git</connection>
-		<developerConnection>scm:git:git@github.com:opendatatrentino/nlprise.git</developerConnection>
+		<url>git@github.com:opendatatrentino/NLPrise.git</url>
+		<connection>scm:git:git@github.com:opendatatrentino/NLPrise.git</connection>
+		<developerConnection>scm:git:git@github.com:opendatatrentino/NLPrise.git</developerConnection>
 	</scm>
 	<description>Java library for natural language processing. Initially geared to handle Italian.</description>
 	<developers>

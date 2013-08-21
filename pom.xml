@@ -122,8 +122,8 @@
 	</build>
 	<scm>
 		<url>git@github.com:opendatatrentino/nlprise.git</url>
-		<connection>scm:git:git://github.com/opendatatrentino/nlprise</connection>
-		<developerConnection>scm:git:https://github.com/opendatatrentino/nlprise.git</developerConnection>
+		<connection>scm:git:git@github.com:opendatatrentino/nlprise.git</connection>
+		<developerConnection>scm:git:git@github.com:opendatatrentino/nlprise.git</developerConnection>
 	</scm>
 	<description>Java library for natural language processing. Initially geared to handle Italian.</description>
 	<developers>

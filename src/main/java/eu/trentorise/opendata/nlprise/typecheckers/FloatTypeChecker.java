@@ -22,8 +22,8 @@
 package eu.trentorise.opendata.nlprise.typecheckers;
 
 /**
+ * Last modified by azanella On 28/gen/2014
  * @author Alberto Zanella <a.zanella@trentorise.eu>
- * @since Last modified by azanella On 28/gen/2014
  *
  */
 public class FloatTypeChecker {

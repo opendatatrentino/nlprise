@@ -24,8 +24,9 @@ package eu.trentorise.opendata.nlprise.typecheckers;
 import eu.trentorise.opendata.nlprise.identifiers.date.DateIdentifier;
 
 /**
+ * 
+ * Last modified by azanella On 28/gen/2014
  * @author Alberto Zanella <a.zanella@trentorise.eu>
- * @since Last modified by azanella On 28/gen/2014
  */
 public class DateTypeChecker {
 	private static final int MAX_DATE_SIZE = 30;

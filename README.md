@@ -10,6 +10,7 @@ _to prise : to extract or obtain with difficulty: they had to prise the news out
 
 **Project status**: 0.1 version released on Maven central
 
+
 **Roadmap**: see [project issues](https://github.com/opendatatrentino/NLPrise/issues)
 
 **Documentation**: see [the wiki](https://github.com/opendatatrentino/NLPrise/wiki)
@@ -17,7 +18,6 @@ _to prise : to extract or obtain with difficulty: they had to prise the news out
 **Platform** 
 
 * Java library
-* Additional web interface
 * Maven project
  
 

@@ -63,7 +63,7 @@ public class DataTypeGuess {
                 if (ListTypeChecker.check(str)){
                     return Datatype.LIST;
                 }
-                if (str.length() > 10){
+                if (str.length() > 20 && str.contains(" ")){
                     return Datatype.NL_STRING;
                 }
 		return Datatype.STRING;

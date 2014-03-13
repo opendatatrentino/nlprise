@@ -16,7 +16,7 @@ import static org.junit.Assert.assertTrue;
 import org.junit.Test;
 
 /**
- * Last modified on 10 Feb 2014
+ * Last modified on 13 Mar 2014
  * @author David Leoni
  */
 public class TestTypeCheckers {
@@ -72,4 +72,14 @@ public class TestTypeCheckers {
         assertEquals(Datatype.STRING, DataTypeGuess.guessType("<,e,w , e"));
     }    
 
+    /**
+     * tests values from Impianti di Risalita dataset http://dati.trentino.it/dataset/impianti-di-risalita-vivifiemme-2013/resource/779d1d9d-9370-47f4-a194-1b0328c32f02
+    */
+    @Test
+    public void testImpiantiDiRisalita(){
+        assertEquals(Datatype.NL_STRING, DataTypeGuess.guessType("Stalimen - Gardonè partenza"));
+        assertEquals(Datatype.STRING, DataTypeGuess.guessType("08.30 - 16.45"));
+        assertEquals(Datatype.NL_STRING, DataTypeGuess.guessType("Seggiovia ad agganciamento automatico"));
+        assertEquals(Datatype.STRING, DataTypeGuess.guessType("Detachable chairlift"));
+    }
 }

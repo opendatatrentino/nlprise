@@ -35,7 +35,7 @@ public class ListTypeChecker {
             for (int i = 0; i < t.length(); i++) {
                 char c = t.charAt(i);
 
-                if (!(Character.isAlphabetic(c) || Character.isDigit(c) || Character.isWhitespace(c))) {
+                if (!(Character.isLetter(c) || Character.isDigit(c) || Character.isWhitespace(c))) {
                     return false;
                 }
             }

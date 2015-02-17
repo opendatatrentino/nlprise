@@ -1,14 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package eu.trentorise.opendata.nlprise.typecheckers;
+
+import javax.annotation.Nullable;
 
 /**
  * Last modified on 10 Feb 2014
  *
- * @author David Leoni
+ * @author David Leoni <david.leoni@unitn.it> 
  */
 public class ListTypeChecker {
 
@@ -23,7 +20,10 @@ public class ListTypeChecker {
      * Word can only contain alphanumeric characters. The list must contain at
      * least one comma.
      */
-    public static boolean check(String str) {
+    public static boolean check(@Nullable String str) {
+        if (str == null) {
+            return false;
+        }        
         String[] tokens = str.split(",");
         if (tokens.length  < 2) {
             return false;

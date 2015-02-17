@@ -7,20 +7,22 @@
 package eu.trentorise.opendata.nlprise.typecheckers;
 
 import java.io.IOException;
+import javax.annotation.Nullable;
 import org.codehaus.jackson.map.ObjectMapper;
 
 /**
- * Last modified on 10 Feb 2014
- * @author David Leoni
+ * @author David Leoni <david.leoni@unitn.it> 
  */
 public class JsonTypeChecker {
     /**
      * Checks if parameter str is a json.
      * @param s any string.
-     * @return true if given string is a well formed json. 
+     * @return true if given string is a well formed json.      
      */
-    public static boolean check(String s){
-        
+    public static boolean check(@Nullable String s){
+            if (s == null) {
+            return false;
+        }    
         String ns = s.trim();
         
         if (!(ns.startsWith("{") || ns.startsWith("["))){

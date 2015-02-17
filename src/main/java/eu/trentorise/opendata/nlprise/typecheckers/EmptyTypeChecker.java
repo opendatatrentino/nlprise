@@ -15,20 +15,28 @@
  *
  *******************************************************************************
  */
-
 /**
- * 
+ *
  */
 package eu.trentorise.opendata.nlprise.typecheckers;
 
+import javax.annotation.Nullable;
+
 /**
  * Last modified by azanella On 28/gen/2014
- * 
+ *
  * @author Alberto Zanella <a.zanella@trentorise.eu>
  */
 public class EmptyTypeChecker {
-	public static boolean check(String str) {
-		String tocheck = str.replaceAll(" ", "");
-		return tocheck.isEmpty();
-	}
+
+    /**
+     * Returns true when input is null, empty, or maybe only of spaces.
+     */
+    public static boolean check(@Nullable String str) {
+        if (str == null) {
+            return true;
+        }
+        String tocheck = str.replaceAll(" ", "");
+        return tocheck.isEmpty();
+    }
 }

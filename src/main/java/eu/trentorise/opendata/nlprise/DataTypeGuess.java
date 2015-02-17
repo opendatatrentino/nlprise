@@ -23,6 +23,8 @@ import eu.trentorise.opendata.nlprise.typecheckers.IntTypeChecker;
 import eu.trentorise.opendata.nlprise.typecheckers.JsonTypeChecker;
 import eu.trentorise.opendata.nlprise.typecheckers.ListTypeChecker;
 import eu.trentorise.opendata.nlprise.typecheckers.XmlTypeChecker;
+import javax.annotation.Nullable;
+import static org.parboiled.common.Preconditions.checkNotNull;
 
 
 /**
@@ -34,36 +36,38 @@ public class DataTypeGuess {
 	/**
 	 * Defines supported data types
 	 * 
-	 * @author Alberto Zanella <a.zanella@trentorise.eu> Last modified by
-	 *         azanella On 11/lug/2013
+	 * @author Alberto Zanella <a.zanella@trentorise.eu> 
+         * @author David Leoni <david.leoni@unitn.it> 
 	 */
 	public enum Datatype {
 		INT, FLOAT, DATE, STRING, GEOJSON, XML, JSON, LIST, NL_STRING , EMPTY;
 	}
 	
-	public static Datatype guessType(String str) {
+	public static Datatype guessType(@Nullable String str) {
 		if (EmptyTypeChecker.check(str)) {
 			return Datatype.EMPTY;
 		}
-		if (IntTypeChecker.check(str)) {
+                String nonEmptyStr = checkNotNull(str);
+                
+		if (IntTypeChecker.check(nonEmptyStr)) {
 			return Datatype.INT;
 		}
-		if (FloatTypeChecker.check(str)) {
+		if (FloatTypeChecker.check(nonEmptyStr)) {
 			return Datatype.FLOAT;
 		}
-		if (DateTypeChecker.check(str)) {
+		if (DateTypeChecker.check(nonEmptyStr)) {
 			return Datatype.DATE;
 		}
-                if (XmlTypeChecker.check(str)){
+                if (XmlTypeChecker.check(nonEmptyStr)){
                     return Datatype.XML;
                 }
-                if (JsonTypeChecker.check(str)){
+                if (JsonTypeChecker.check(nonEmptyStr)){
                 return Datatype.JSON;
                 }
-                if (ListTypeChecker.check(str)){
+                if (ListTypeChecker.check(nonEmptyStr)){
                     return Datatype.LIST;
                 }
-                if (str.length() > 20 && str.contains(" ")){
+                if (nonEmptyStr.length() > 20 && nonEmptyStr.contains(" ")){
                     return Datatype.NL_STRING;
                 }
 		return Datatype.STRING;

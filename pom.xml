@@ -34,7 +34,9 @@
     </licenses>
 
     <properties>
+        <scmUrl>https://github.com/opendatatrentino/nlprise</scmUrl>        
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
 
         
@@ -144,16 +146,21 @@
         </plugins>
         
     </build>
+    
     <scm>
-        <url>git@github.com:opendatatrentino/NLPrise.git</url>
-        <connection>scm:git:git@github.com:opendatatrentino/NLPrise.git</connection>
-        <developerConnection>scm:git:git@github.com:opendatatrentino/NLPrise.git</developerConnection>
-    </scm>
+        <url>${scmUrl}</url>
+        <connection>scm:git:${scmUrl}.git</connection>
+        <developerConnection>scm:git:${scmUrl}.git</developerConnection>        
+      <tag>HEAD</tag>
+  </scm>
     
     <issueManagement>
         <system>Github</system>
-        <url>https://github.com/opendatatrentino/NLPrise/issues</url>
-    </issueManagement>        
+        <url>${scmUrl}/issues</url>
+    </issueManagement>    
+        
+    
+    
     <description>Java library for natural language processing. Initially geared to handle Italian.</description>
     <developers>
         <developer>

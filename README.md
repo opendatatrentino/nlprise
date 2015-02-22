@@ -10,11 +10,9 @@ _to prise : to extract or obtain with difficulty: they had to prise the news out
 
 **Project status**: 
 
-* 0.1 version released on Maven central
-* developing [Milestone 0.2](https://github.com/opendatatrentino/NLPrise/issues?milestone=2)
+* 0.2.0 version released on Maven central
 
-
-**Roadmap**: see [project issues](https://github.com/opendatatrentino/NLPrise/issues)
+**Roadmap**: Currently, there are no plans to extend NLPrise except for bug fix releases. For this, see [project issues](https://github.com/opendatatrentino/NLPrise/issues).
 
 **Documentation**: see [the wiki](https://github.com/opendatatrentino/NLPrise/wiki)
 
@@ -33,7 +31,7 @@ To use it with Maven, add this in your pom.xml dependencies section:
     <dependency>
             <groupId>eu.trentorise.opendata</groupId>
             <artifactId>nlprise</artifactId>
-            <version>0.1.0</version>
+            <version>0.2.0</version>
     </dependency>
 
 
